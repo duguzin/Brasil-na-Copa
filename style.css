@@ -129,7 +129,8 @@ nav {
  /* MEDIA SCREEN RESPONSIVIDADE */
 
  @media (max-width: 999px) {
-     
+
+
     body {
         overflow-x: hidden;
     }
@@ -266,6 +267,7 @@ nav {
         transform: translateX(0);
     }
 }
+
 
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
