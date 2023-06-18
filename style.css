@@ -129,11 +129,38 @@ nav {
  /* MEDIA SCREEN RESPONSIVIDADE */
 
  @media (max-width: 999px) {
-
-
     body {
         overflow-x: hidden;
     }
+    .nav-list {
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 100vw;
+        height: 40vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        opacity: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 999px) {
     .titulo-home {
         font-size: 1.1rem;
     }
@@ -142,6 +169,9 @@ nav {
         max-width: 800px;
         max-height: 400px;
     }
+}
+
+   
  /* RESPONSIVIDADE DO TITULO */
 /* @media screen and (max-width: 510px) { 
     .titulo-home {
@@ -170,30 +200,7 @@ nav {
 
 /* MENU MOBILE */
 
-    .nav-list {
-        position: absolute;
-        top: 12vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #23232e;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu {
-        display: block;
-    }
-    .nav-list.active {
-        transform: translateX(0);
-    }
-}
+
 /* --------- */
  /* RESPONSIVIDADE TELA DE CADASTRO */
  @media screen and (max-width: 768px) {
