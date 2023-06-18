@@ -128,9 +128,11 @@ nav {
 
  /* MEDIA SCREEN RESPONSIVIDADE */
 
- @media screen and (max-width: 999px) {
+ @media (max-width: 999px) {
+     
     body {
         overflow-x: hidden;
+        overflow-y: hidden;
     }
     .titulo-home {
         font-size: 1.1rem;
