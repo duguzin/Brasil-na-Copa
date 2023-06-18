@@ -136,7 +136,8 @@ nav {
         position: absolute;
         top: 12vh;
         right: 0;
-        width: 99vw;
+        left: 0;
+        width: 100vw 100vw;
         height: 40vh;
         background: #23232e;
         flex-direction: column;
@@ -145,7 +146,7 @@ nav {
         opacity: 0;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
-        border: 2px solid #ffdf00;
+        border: 1px solid #ffdf00;
         
     }
     .nav-list li {
@@ -162,6 +163,13 @@ nav {
 }
 
 @media screen and (max-width: 999px) {
+    .section-1 div p {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    .section-1 div h1 {
+        font-size: 1.8rem;
+    }
     .titulo-home {
         font-size: 1.1rem;
     }
@@ -172,22 +180,6 @@ nav {
     }
 }
 
-   
- /* RESPONSIVIDADE DO TITULO */
-/* @media screen and (max-width: 510px) { 
-    .titulo-home {
-        font-size: 0.7rem; 
-    }
-    .section-1 div h1 {
-        font-size: 1.3rem;
-    }
-    .section-1 div img {
-        margin: 0;
-        padding: 0.8rem 0;
-        max-width: 400px;
-        max-height: 300px;
-    }
-} */
 @media screen and (max-width: 530px) {
     .section-1 div img {
         margin: 0;
@@ -232,12 +224,18 @@ nav {
     }
     .section-1 div img {
         margin: 0;
-        padding: 0.5rem 0;
-        max-width: 315px;
-        max-height: 300px;
+        padding: 1rem 0;
+        max-width: 335px;
+        max-height: 240px;
     }
     .titulo-home h1 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    .section-1 div p {
+        font-size: 0.9rem;
+    }
+    .section-1 div h1 {
+        font-size: 1rem;
     }
 }
 
@@ -259,7 +257,12 @@ nav {
     max-width: 260px;
     max-height: 200px;
   }
-
+  .section-1 div p {
+    font-size: 0.8rem;
+  }
+  .section-1 div h1 {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -300,11 +303,6 @@ nav {
     max-width: 800px;
     max-height: 460px;
     border-radius: 0.5rem;
-}
-
-.section-1 div img {
-    align-items: center;
-    border: 5px solid #333;
 }
 
 
@@ -372,7 +370,7 @@ span {
 
 /* TITULO DO CADASTRO */
 
-.titulo-login {
+/* .titulo-login {
     text-align: center;
 }
 
@@ -389,7 +387,7 @@ span {
 /* -------- */
 
 /* BOTÃO DE SUBMIT DO CADASTRO */
-.login-card button {
+/*.login-card button {
     background: black;
     color: white;
     padding: 1rem 1.5rem;
@@ -406,11 +404,11 @@ span {
 .login-card button:hover {
     background-color: #7c6e13;
     cursor: pointer;
-}
+}*/
 /* -------- */
 
 
-/* SLIDESHOW  */
+/* SLIDESHOW 
 .content {
     border-radius: 20px;
     width: 50vw;
@@ -483,7 +481,7 @@ input {
 
 #slide5:checked ~ .s1 {
     margin-left: -80%;
-}
+} */
 
 
 footer {
