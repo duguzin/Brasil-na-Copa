@@ -136,7 +136,7 @@ nav {
         position: absolute;
         top: 12vh;
         right: 0;
-        width: 100vw;
+        width: 99vw;
         height: 40vh;
         background: #23232e;
         flex-direction: column;
@@ -145,6 +145,7 @@ nav {
         opacity: 0;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        border: 2px solid #ffdf00;
         
     }
     .nav-list li {
