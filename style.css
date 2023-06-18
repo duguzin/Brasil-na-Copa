@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+body {
+    font-family: 'Nunito';
+}
+
+/* main {
+    background: url("https://images6.alphacoders.com/117/1175283.jpg") no-repeat center center;
+    background-size: cover;
+    height: 110vh;
+}  */
+
+/* HEADER NAVBAR LINKS*/
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 4px;
+    transition: 3s;
+    position: relative;
+    font-family: 'Nunito';
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: #ffdf00;
+    height: 3px;
+    bottom: -1px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+nav img {
+   width: 60px;
+}
+/* -------- */
+
+/* BOTÃO CADASTRAR */
+.button_login button {
+    background-color: #ffdf00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.button_login button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    background-color: #ffdf00;
+    letter-spacing: 3px;
+}
+
+.button_login li {
+    letter-spacing: 3px;
+    margin-right: 3px;
+    padding: 10px;
+}
+
+.button_login {
+    display: flex;
+    list-style: none;
+}
+
+/* --------- */
+
+/* NAVBAR LIST */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito';
+    background: #23232e;
+    height: 12vh;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    color: white;
+} 
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 80px;
+}
+/* -------- */
+
+/* MENU MOBILE */
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+/* -------- */
+
+/* TÍTULO HOME */
+
+.titulo-home {
+    /* background: rgba(255, 255, 255, .4); */
+    background-color: #ffdf00;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 12vh;
+}
+.titulo-home h1 {
+    padding: 0.9rem;
+}
+/* -------- */
+
+
+ /* MEDIA SCREEN RESPONSIVIDADE */
+
+ @media screen and (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .titulo-home {
+        font-size: 1.1rem;
+    }
+    .section-1 div img {
+        margin: 1rem 0rem;
+        max-width: 800px;
+        max-height: 400px;
+    }
+ /* RESPONSIVIDADE DO TITULO */
+/* @media screen and (max-width: 510px) { 
+    .titulo-home {
+        font-size: 0.7rem; 
+    }
+    .section-1 div h1 {
+        font-size: 1.3rem;
+    }
+    .section-1 div img {
+        margin: 0;
+        padding: 0.8rem 0;
+        max-width: 400px;
+        max-height: 300px;
+    }
+} */
+@media screen and (max-width: 530px) {
+    .section-1 div img {
+        margin: 0;
+        padding: 0.8rem 0;
+        max-width: 420px;
+        max-height: 300px;
+    }
+}
+    
+/* ------- */
+
+/* MENU MOBILE */
+
+    .nav-list {
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+}
+/* --------- */
+ /* RESPONSIVIDADE TELA DE CADASTRO */
+ @media screen and (max-width: 768px) {
+
+    .login-card {
+        width: 250px;
+        padding: 3rem;
+        margin-left: 1rem;
+    }
+    .inputUser {
+        width: 72%;
+    }
+    .login-card div button {
+        width: 106%;
+    }
+
+}
+/* ---------- */
+
+/* RESPONSIVIDADE BOTÃO CADASTRAR */
+@media screen and (max-width: 420px) {
+    .button_login button a {
+        font-size: 0.8rem;
+    }
+    .button_login button {
+        padding: 10px;
+        margin: 2px;
+    }
+    .section-1 div img {
+        margin: 0;
+        padding: 0.5rem 0;
+        max-width: 315px;
+        max-height: 300px;
+    }
+    .titulo-home h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+  nav img  {
+    width: 50px;
+
+  }
+  .titulo-home h1 {
+    font-size: 1.1rem;
+  }
+  .button_login li a {
+    font-size: 0.8rem;
+  }
+  .button_login button {
+    padding: 5px;
+}
+  .section-1 div img {
+    max-width: 260px;
+    max-height: 200px;
+  }
+
+}
+
+
+
+ /* ANIMAÇÕES MENU MOBILE */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px); 
+}
+/* --------- */
+
+
+/* SECTION HOME  */
+.section-1 img {
+    margin: 2rem 15rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 460px;
+    border-radius: 0.5rem;
+}
+
+.section-1 div img {
+    align-items: center;
+    border: 5px solid #333;
+}
+
+
+.section-1 {
+    align-items: center;
+    padding: 2rem;  
+}
+
+.section-1 p {
+    font-size: 1.1em;
+    line-height: 2rem;
+    text-align: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0.5rem;
+    color: black;
+}
+
+.section-1 h1 {
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.section-1 div {
+    width: 100%;
+}
+
+span {
+    color: purple;
+}
+/* -------- */
+
+/* CSS FORMULÁRIO DE CADASTRO */
+
+/* RETÂNGULO DO CADASTRO */
+.login-card {
+    width: 450x;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+/* -------- */
+
+/* INPUTS DO CADASTRO */
+.inputUser {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(0.9rem);
+    margin-bottom: .5rem;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .6);
+    padding: 1rem 1.5rem;
+    padding-left: calc(.5rem * 3.5);
+    border-radius: 100px;
+    width: 85%;
+    transition: background .5s;
+}
+
+/* --------- */
+
+/* TITULO DO CADASTRO */
+
+.titulo-login {
+    text-align: center;
+}
+
+.login-card h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+}
+
+.login-card h2 {
+    opacity: 0.8;
+    font-size: 18px;
+}
+/* -------- */
+
+/* BOTÃO DE SUBMIT DO CADASTRO */
+.login-card button {
+    background: black;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    width: 96%;
+    margin-top: 1rem;
+    border: none;
+}
+
+.login-card button:hover {
+    background-color: #7c6e13;
+    cursor: pointer;
+}
+/* -------- */
+
+
+/* SLIDESHOW  */
+.content {
+    border-radius: 20px;
+    width: 50vw;
+    height: 62vh;
+    position: absolute;
+    top: 65%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #fff;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.navigation {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    transition: .4s;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer div img {
+    width: 45px;
+  }
+
+  /* Estilos para tornar o footer responsivo */
+  @media screen and (max-width: 600px) {
+    footer {
+      font-size: 12px;
+    }
+  }
+
+/* --------- */
