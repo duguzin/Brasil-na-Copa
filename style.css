@@ -181,56 +181,32 @@ nav {
         margin: 1rem 0rem;
         max-width: 800px;
         max-height: 400px;
+        border-radius: 1rem;
     }
 }
 
 @media screen and (max-width: 530px) {
     .section-1 div img {
         margin: 0;
-        padding: 0.8rem 0;
+        padding: 0.3rem 0;
         max-width: 420px;
         max-height: 300px;
+        border-radius: 1rem;
     }
 }
     
 /* ------- */
 
-/* MENU MOBILE */
-
-
-/* --------- */
- /* RESPONSIVIDADE TELA DE CADASTRO */
- @media screen and (max-width: 768px) {
-
-    .login-card {
-        width: 250px;
-        padding: 3rem;
-        margin-left: 1rem;
-    }
-    .inputUser {
-        width: 72%;
-    }
-    .login-card div button {
-        width: 106%;
-    }
-
-}
 /* ---------- */
 
 /* RESPONSIVIDADE BOTÃO CADASTRAR */
 @media screen and (max-width: 420px) {
-    .button_login button a {
-        font-size: 0.8rem;
-    }
-    .button_login button {
-        padding: 10px;
-        margin: 2px;
-    }
     .section-1 div img {
         margin: 0;
-        padding: 1rem 0;
+        padding: 0.3rem 0;
         max-width: 335px;
         max-height: 240px;
+        border-radius: 1.2rem;
     }
     .titulo-home h1 {
         font-size: 1.4rem;
