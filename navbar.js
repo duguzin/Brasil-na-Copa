@@ -6,6 +6,8 @@ class MobileNavBar {
       this.activeClass = "active";
   
       this.handleClick = this.handleClick.bind(this);
+      this.disableScroll = this.disableScroll.bind(this);
+      this.enableScroll = this.enableScroll.bind(this);
     }
   
     animateLinks() {
@@ -19,10 +21,23 @@ class MobileNavBar {
     }
   
     handleClick() {
-      console.log(this);
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
+  
+      if (this.mobileMenu.classList.contains(this.activeClass)) {
+        this.disableScroll();
+      } else {
+        this.enableScroll();
+      }
+    }
+  
+    disableScroll() {
+      document.body.style.overflow = "hidden";
+    }
+  
+    enableScroll() {
+      document.body.style.overflow = "";
     }
   
     addClickEvent() {
@@ -37,6 +52,7 @@ class MobileNavBar {
           this.navList.classList.remove(this.activeClass);
           this.mobileMenu.classList.remove(this.activeClass);
           this.animateLinks();
+          this.enableScroll();
         }
       });
     }
@@ -52,6 +68,7 @@ class MobileNavBar {
   
   const mobileNavBar = new MobileNavBar(".mobile-menu", ".nav-list", ".nav-list li");
   mobileNavBar.init();
+  
   
 
 // // Função para adicionar o indicador ao link de navegação ativo
