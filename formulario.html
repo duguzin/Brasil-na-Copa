@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Img/logo.png" type="image/x-icon">
-    <title>Tela de Cadastro</title>
-    <style>
-
-      body {
-         /* background: url("https://images6.alphacoders.com/117/1175283.jpg") no-repeat center center;
-         background-size: cover;
-         height: 125vh; */
-         background-color: #23232e;
-      }
-      
-    </style>
+  <title>Formulário de Cadastro</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./Img/logo.png" type="image/x-icon">
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }  
+    body {
+    background: url("https://www.10wallpaper.com/wallpaper/1366x768/1405/2014_Brazil_20th_FIFA_World_Cup_Desktop_Wallpaper_01_1366x768.jpg") no-repeat center center;
+    background-size: cover;
+    height: 110vh;
+    }
+  </style>
 </head>
-
 <body>
-<section class="login-card">
-        <div class="titulo-login">
-            <h1>Criar uma Conta</h1>
-        <h2>Crie uma conta e fique por dentro de todas as nossas novidades!</h2>
-        </div>
-        
-        <div>
-           <p>Nome Completo:</p> 
-           <input name="nome" class="inputUser" placeholder="Ex. : Gustavo Dionizio" id="nome" type="text" required>
-        </div>
-        <div>
-            <p>E-mail:</p> 
-            <input name="email" class="inputUser" placeholder="Ex. : seunome@gmail.com" id="email" type="email" required>
-         </div>
-         <div>
-            <p>Telefone (opcional)</p> 
-            <input name="fone" class="inputUser" placeholder="Ex. : (11) 97792-2484" id="fone" type="text">
-         </div>
-         <div>
-            <p>Senha:</p> 
-            <input name="senha" class="inputUser" id="senha" type="password" required>
-         </div>
-         <div>
-            <p>Confirmar Senha:</p> 
-            <input name="senha" class="inputUser" id="senha" type="password" required>
-         </div>
-         <div><button type="submit">CRIAR UMA CONTA</button></div>
-    </section>
+  <div class="container">
+    <form>
+      <div style="text-align: center;"><a href="./index.html"><img src="./Img/logo.png" alt="logo" width="45px"></a></div>
+      <h1 class="h1-login">Criar uma Conta</h1>
+      <h2 class="h2-login">Crie uma conta e fique por dentro de todas as nossas novidades!</h2>
+
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" placeholder="Ex. : Gustavo Dionizio" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Ex. : seunome@gmail.com" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="tel" placeholder="Ex. : (11) 97792-2484" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirme a Senha:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <button class="btn-login" type="submit">Cadastrar</button>
+    </form>
+  </div>
 </body>
 </html>

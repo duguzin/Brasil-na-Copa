@@ -337,152 +337,69 @@ nav {
 
 /* CSS FORMULÁRIO DE CADASTRO */
 
-/* RETÂNGULO DO CADASTRO */
-.login-card {
-    width: 450x;
-    background: rgba(255, 255, 255, .5);
-    padding: 4rem;
-    border-radius: 10px;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-/* -------- */
-
-/* INPUTS DO CADASTRO */
-.inputUser {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: calc(0.9rem);
-    margin-bottom: .5rem;
-    border: none;
-    outline: none;
-    background: rgba(255, 255, 255, .6);
-    padding: 1rem 1.5rem;
-    padding-left: calc(.5rem * 3.5);
-    border-radius: 100px;
-    width: 85%;
-    transition: background .5s;
-}
-
-/* --------- */
-
-/* TITULO DO CADASTRO */
-
-/* .titulo-login {
-    text-align: center;
-}
-
-.login-card h1 {
-    font-size: 34px;
-    margin: 0;
-    padding: 0;
-}
-
-.login-card h2 {
-    opacity: 0.8;
-    font-size: 18px;
-}
-/* -------- */
-
-/* BOTÃO DE SUBMIT DO CADASTRO */
-/*.login-card button {
-    background: black;
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: background .5s;
-    width: 96%;
-    margin-top: 1rem;
-    border: none;
-}
-
-.login-card button:hover {
-    background-color: #7c6e13;
-    cursor: pointer;
-}*/
-/* -------- */
-
-
-/* SLIDESHOW 
-.content {
-    border-radius: 20px;
-    width: 50vw;
-    height: 62vh;
-    position: absolute;
-    top: 65%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    border: 4px solid #fff;
-    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
-}
-
-.navigation {
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    transition: .4s;
-}
-
-.bar {
-    width: 70px;
-    height: 17px;
-    border: 2px solid #fff;
-    margin: 6px;
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    background: rgba(255, 255, 255, .4);
+    padding: 20px;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-.bar:hover {
-    background-color: #fff;
-}
-
-input {
-    display: none;
-}
-
-.slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
-}
-
-.slide {
-    width: 20%;
-    transition: .6s;
-}
-
-.slide img {
+  }
+  
+  .h2-login {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+   
+  .h1-login {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
     width: 100%;
-    height: 100%;
-}
-
-#slide1:checked ~ .s1 {
-    margin-left: 0;
-}
-
-#slide2:checked ~ .s1 {
-    margin-left: -20%;
-}
-
-#slide3:checked ~ .s1 {
-    margin-left: -40%;
-}
-
-#slide4:checked ~ .s1 {
-    margin-left: -60%;
-}
-
-#slide5:checked ~ .s1 {
-    margin-left: -80%;
-} */
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background: rgba(255, 255, 255, .6);
+  }
+  
+  .btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #fee100;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-login:hover {
+    background-color: #ffd700;
+  }
+  
 
 
 footer {
