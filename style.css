@@ -37,6 +37,7 @@ body {
     width: 100%;
 }
 
+
 nav img {
    width: 60px;
 }
@@ -106,7 +107,10 @@ nav {
     height: 2px;
     background: #fff;
     margin: 8px;
+    transition: .3s;
 }
+
+  
 
 /* -------- */
 
@@ -329,9 +333,6 @@ nav {
     width: 100%;
 }
 
-span {
-    color: purple;
-}
 /* -------- */
 
 /* CSS FORMULÁRIO DE CADASTRO */
