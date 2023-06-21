@@ -5,7 +5,6 @@ body {
     font-family: 'Kanit'; 
 }
 
-
 /* main {
     background: url("https://images6.alphacoders.com/117/1175283.jpg") no-repeat center center;
     background-size: cover;
@@ -217,7 +216,6 @@ nav {
 
 /* ---------- */
 
-/* RESPONSIVIDADE BOTÃO CADASTRAR */
 @media screen and (max-width: 420px) {
     .section-1 div img {
         margin: 0;
@@ -430,7 +428,11 @@ footer {
     }
   }
   .span-home1 {
-    background: rgb(226, 226, 231); padding: 12px; display: block; font-size: 16px; line-height: 20px;
+    background: rgb(226, 226, 231); 
+    padding: 12px; 
+    display: block; 
+    font-size: 14px; 
+    line-height: 20px;
 }
 
  .img-home2 {
