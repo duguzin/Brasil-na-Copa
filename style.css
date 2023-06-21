@@ -4,23 +4,7 @@
 body {
     font-family: 'Kanit'; 
 }
-#zoom {
-    /*Safari e Chrome antigos*/
-    -webkit-transform: scale(2.0);
-    -webkit-transform-origin: 0 0;
 
-    /*Firefox mais antigo*/
-    -moz-transform: scale(2.0);
-    -moz-transform-origin: 0 0;
-
-    /*IE 9*/
-    -ms-transform: scale(2.0);
-    -ms-transform-origin: 0 0;
-
-    /*navegadores atualizados*/
-    transform: scale(2.0);
-    transform-origin: 0 0;
-}
 
 /* main {
     background: url("https://images6.alphacoders.com/117/1175283.jpg") no-repeat center center;
