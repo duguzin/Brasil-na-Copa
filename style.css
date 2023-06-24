@@ -990,7 +990,7 @@ section.section-home-bv h1 {
   color: #fff;
 }
 
-section.section-home4 {
+.section-home4 {
   align-items: center;
   padding: 2rem 15rem;  
   display: flex;
@@ -1021,7 +1021,7 @@ section.section-home4 {
   color: #fff;
 }
 
-section.section-home5 {
+.section-home5 {
   align-items: center;
   padding: 2rem 15rem;  
   display: flex;
@@ -1053,7 +1053,7 @@ section.section-home5 {
   color: #fff;
 }
 
-section.section-home6 {
+.section-home6 {
   align-items: center;
   padding: 2rem 15rem;  
   display: flex;
@@ -1085,7 +1085,11 @@ section.section-home6 {
   color: #fff;
 }
 
-section.section-home-bv {
+
+
+
+
+.section-home-bv {
   align-items: center;
   padding: 2rem 15rem;  
   display: flex;
