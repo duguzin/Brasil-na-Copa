@@ -12,6 +12,10 @@
          margin: 0;
          padding: 0;
         }    
+
+        #home::after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +26,7 @@
             <div><a href="index.html"><img src="./Img/logo.png" alt="logo"></a></div>
 
             <ul class="nav-list">
-                <li><a class="nav-link" href="./index.html">Início</a></li>
+                <li><a class="nav-link" href="./index.html" id="home">Início</a></li>
                 <li><a class="nav-link" href="./primeira-seleçao.html">1° Seleção</a></li>
                 <li><a class="nav-link" href="./primeiro-mundial.html">1° Mundial</a></li>
                 <li><a class="nav-link" href="./penta.html">Penta</a></li>
@@ -45,10 +49,10 @@
 
         <div class="slider">
             <div class="slide">
+                
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
 
                 <div class="st first">
                     <a href="./penta.html"><img src="./Img/penta2.jpeg" alt="2002"></a>
@@ -63,24 +67,12 @@
                     <a href="./derrota.html"><img src="./Img/derrota.jpg" alt="2014"></a>
                 </div>
 
-
-                <div class="nav-auto">
-                    <div class="auto-b1"></div>
-                    <div class="auto-b2"></div>
-                    <div class="auto-b3"></div>
-                    <div class="auto-b4"></div>
-                </div>
-
-                <div class="nav-manual">
+                <!-- <div class="nav-manual">
                     <label for="radio1" class="mamual-btn"></label>
                     <label for="radio2" class="manual-btn"></label>
                     <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-
-                <!-- <div class="button_login">
-                    <button id="teste"><a href="./formulario.html">Veja Mais</a></button>
                 </div> -->
+
             </div>
         </div>
     </section>
