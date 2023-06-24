@@ -69,6 +69,14 @@ class MobileNavBar {
   const mobileNavBar = new MobileNavBar(".mobile-menu", ".nav-list", ".nav-list li");
   mobileNavBar.init();
   
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 4) {
+      counter = 1;
+    }
+  }, 5000);
   
 
 // // Função para adicionar o indicador ao link de navegação ativo
