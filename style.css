@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Kanit'; 
+    overflow-x; hidden;
 }
 
 /* main {
