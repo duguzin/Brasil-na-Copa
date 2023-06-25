@@ -136,6 +136,8 @@ nav {
 .mobile-menu{
     cursor: pointer;
     display: none;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 .mobile-menu div {
     width: 32px;
