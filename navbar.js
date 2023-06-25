@@ -10,20 +10,20 @@ class MobileNavBar {
       this.enableScroll = this.enableScroll.bind(this);
     }
   
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
+    // animateLinks() {
+    //   this.navLinks.forEach((link, index) => {
+    //     link.style.animation
+    //       ? (link.style.animation = "")
+    //       : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+    //           index / 7 + 0.3
+    //         }s`);
+    //   });
+    // }
   
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
+      // this.animateLinks();
   
       if (this.mobileMenu.classList.contains(this.activeClass)) {
         this.disableScroll();

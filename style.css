@@ -3,7 +3,6 @@
 
 body {
     font-family: 'Kanit'; 
-    overflow-x; hidden;
 }
 
 /* main {
@@ -45,15 +44,41 @@ nav img {
 /* -------- */
 
 /* BOTÃO CADASTRAR */
+#link-entrar, #link-login, #button-login {
+  display: none;
+}
+
 .button_login button {
-    background-color: #ffdf00;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+  background-color: #ffdf00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .button_login button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  background-color: #ffdf00;
+  letter-spacing: 3px;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+#button-login {
+    background-color: #ffdf00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+}
+
+#link-login {
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
@@ -61,7 +86,7 @@ nav img {
     letter-spacing: 3px;
     border: none;
     padding: 10px 5px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -72,9 +97,11 @@ nav img {
 }
 
 .button_login {
-    display: flex;
-    list-style: none;
+  display: flex;
+
 }
+
+
 
 /* --------- */
 
@@ -87,7 +114,7 @@ nav {
     font-family: 'Nunito';
     background: #23232e;
     height: 12vh; 
-    padding: 0.5rem 1.6rem;
+    padding: 0.5rem 1.5rem;
     box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -148,10 +175,10 @@ nav {
     }
     .nav-list {
         position: absolute;
-        top: 14vh;
+        top: 10vh;
         right: 0;
-        width: 60vw;
-        height: 88vh;
+        width: 100vw;
+        height: 90vh;
         background: #23232e;
         flex-direction: column;
         align-items: center;
@@ -161,11 +188,17 @@ nav {
         padding-top: 3rem;
     }
     .nav-list li {
-        margin-left: 0;
-        opacity: 0;
+      margin-left: 0;
+       
     }
     .mobile-menu {
         display: block;
+    }
+    #link-entrar, #link-login, #button-login {
+      display: block;
+    }
+    .button_login {
+      display: none;
     }
     .nav-list.active {
         transform: translateX(0);
@@ -604,6 +637,17 @@ section.section-home-bv h1 {
 /* ---------- */
 
 @media screen and (max-width: 420px) {
+
+    #link-login {
+    padding: 5px 5px;
+    }
+    nav {
+    justify-content: space-between;
+    padding: 0 1rem;
+    }
+    nav img {
+      width: 45px;
+    } 
     .section-1 div img {
         margin: 0;
         padding: 0.3rem 0;
@@ -624,10 +668,6 @@ section.section-home-bv h1 {
     }
     section.section-1 {
         padding: 2rem 1rem;
-    }
-    nav {
-      justify-content: space-around;
-      gap: 1.5rem;
     }
     .button_login button {
       padding: 2px;
@@ -744,10 +784,10 @@ section.section-home-bv h1 {
     .section-1 div span {
         font-size: 8px;
     }
-  nav img  {
-    width: 55px;
-    margin-left: 0.5rem;
-  }
+    nav {
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
   div.titulo-home h1 {
     font-size: 1.1rem;
   }
@@ -873,16 +913,16 @@ section.section-home-bv h1 {
 
 
  /* ANIMAÇÕES MENU MOBILE */
-@keyframes navLinkFade {
+/* @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
-}
+} */
 
 
 .mobile-menu.active .line1 {
