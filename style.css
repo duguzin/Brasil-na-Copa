@@ -411,11 +411,11 @@ section.section-home-bv h1 {
 
 @media screen and (max-width: 999px) {
 .slider {
-    height: 300px;
+    height: 400px;
 }
   section.section-slider {
     padding: 1rem 1.5rem;
-    height: 55vh;
+    height: 60vh;
   }
   div.nav-manual {
     display: none;
@@ -443,7 +443,6 @@ section.section-home-bv h1 {
   }
   section.section-home3 img {
     width: 100%;
-    max-width: 100%;
     max-height: 650px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
@@ -539,7 +538,7 @@ section.section-home-bv h1 {
     }
     section.section-slider {
       padding: 1rem 1rem;
-      height: 40vh;
+      height: 35vh;
     }
     div.nav-manual {
       display: none;
@@ -639,16 +638,6 @@ section.section-home-bv h1 {
 /* ------- */
 
 /* ---------- */
-@media screen and (max-width: 380px) {
-  .slider {
-    max-width: 100%;
-    height: 210px;
-  }
-  section.section-slider {
-    padding: 1rem 1rem;
-    height: 30vh;
-  }
-}
 @media screen and (max-width: 420px) {
 
     #link-login {
@@ -684,8 +673,8 @@ section.section-home-bv h1 {
       padding: 2px;
   }
   .slider {
-    max-width: 100%;
-    max-height: 650px;
+    width: 100%;
+    height: 220px;
   }
   section.section-slider {
     padding: 1rem 1rem;
@@ -701,7 +690,7 @@ section.section-home-bv h1 {
     font-size: 1.6rem;
   }
   section.section-home2 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   section.section-home3 {
     padding: 1rem 1rem;
@@ -711,12 +700,11 @@ section.section-home-bv h1 {
     font-size: 1.6rem;
   }
   section.section-home3 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   section.section-home3 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 250px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -729,12 +717,11 @@ section.section-home-bv h1 {
     font-size: 1.6rem;
   }
   section.section-home4 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   section.section-home4 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 250px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -747,12 +734,11 @@ section.section-home-bv h1 {
     font-size: 1.6rem;
   }
   section.section-home5 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   section.section-home5 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 250px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -765,12 +751,11 @@ section.section-home-bv h1 {
     font-size: 1.6rem;
   }
   section.section-home6 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   section.section-home6 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 250px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -782,7 +767,7 @@ section.section-home-bv h1 {
     font-size: 1.6rem;
   }
   section.section-home-bv p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 330px) {
@@ -851,8 +836,7 @@ section.section-home-bv h1 {
   }
   section.section-home3 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 20px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -869,8 +853,7 @@ section.section-home-bv h1 {
   }
   section.section-home4 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 220px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -887,8 +870,7 @@ section.section-home-bv h1 {
   }
   section.section-home5 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 220px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -905,8 +887,7 @@ section.section-home-bv h1 {
   }
   section.section-home6 img {
     width: 100%;
-    max-width: 100%;
-    max-height: 650px;
+    max-height: 220px;
     border-radius: 5px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
@@ -986,7 +967,7 @@ section.section-home-bv h1 {
 
 .section-home2 {
   align-items: center;
-  padding: 3rem 15rem;  
+  padding: 3rem 8rem;  
 }
 
 .section-home2 p {
@@ -998,14 +979,6 @@ section.section-home-bv h1 {
   text-align: justify;
 }
 
-.section-home2 img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 650px;
-  vertical-align: middle;
-}
-
 
 .section-home2 h1 {
   padding-bottom: 1rem;
@@ -1014,7 +987,7 @@ section.section-home-bv h1 {
 
 .section-home3 {
   align-items: center;
-  padding: 2rem 15rem;  
+  padding: 2rem 8rem;  
   display: flex;
   gap: 2rem;
   background-color: #23232e;
@@ -1031,8 +1004,7 @@ section.section-home-bv h1 {
 
 .section-home3 img {
   width: 50%;
-  max-width: 100%;
-  max-height: 650px;
+  height: 450px;
   border-radius: 5px;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -1062,7 +1034,7 @@ section.section-home-bv h1 {
 
 .section-home4 img {
   width: 50%;
-  max-height: 650px;
+  height: 450px;
   border-radius: 5px;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -1079,7 +1051,7 @@ section.section-home-bv h1 {
   padding: 2rem 15rem;  
   display: flex;
   gap: 2rem;
-  background-color: #23232e;
+  background-color: fff;
 }
 
 .section-home5 p {
@@ -1093,8 +1065,7 @@ section.section-home-bv h1 {
 
 .section-home5 img {
   width: 50%;
-  max-width: 100%;
-  max-height: 650px;
+  height: 450px;
   border-radius: 5px;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -1125,8 +1096,7 @@ section.section-home-bv h1 {
 
 .section-home6 img {
   width: 50%;
-  max-width: 100%;
-  max-height: 650px;
+  height: 450px;
   border-radius: 5px;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -1157,14 +1127,6 @@ section.section-home-bv h1 {
   font-family: 'Kanit', sans-serif;
   color: #000;
   text-align: justify;
-}
-
-.section-home-bv img {
-  width: 50%;
-  max-width: 100%;
-  max-height: 650px;
-  border-radius: 5px;
-  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 
